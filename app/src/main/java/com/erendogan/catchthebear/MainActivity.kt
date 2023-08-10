@@ -1,5 +1,6 @@
 package com.erendogan.catchthebear
 
+import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -54,8 +55,8 @@ class MainActivity : AppCompatActivity() {
                 alertDialogBuilder.setMessage("Skorunuz: $score\nTekrar oynamak ister misiniz?")
                 alertDialogBuilder.setPositiveButton("Evet"){ _, _ ->
                     val intent = intent
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
                     startActivity(intent)
-                    finish()
                 }
                 alertDialogBuilder.setNegativeButton("Hayır"){ _, _ ->
                     finish()
