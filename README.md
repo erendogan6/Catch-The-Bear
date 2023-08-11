@@ -11,6 +11,11 @@ Bu proje, Kotlin programlama dili kullanılarak geliştirilmiş bir Android uygu
 - Skor Sistemi: Kullanıcı ayı resmine tıkladığında 1 puan kazanır.
 - Rastgele Resim: Her 500 milisaniyede bir resim farklı kordinatlarda belirir.
 
+## Test Edilen Sürümler
+Android 8.0
+Android 13.0
+Android 14.0
+
 ## Teknolojiler
 - View Binding
 - Runnable
